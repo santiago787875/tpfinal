@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="entrada.css">
+    <link rel="stylesheet" href="barrita.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="footerrrr.css">
+</head>
+<body>
+    <nav  class="topnav"  id="myTopnav" >
+        <img class="logo" src="imagenes/patas.png" alt="Logo">
+
+        <a href="contacto.html">CONTACTO</a>
+        <a href="ayudar.html">¿COMO AYUDAR?</a>
+        <a href="proyectos.html">PROYECTOS</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="index.html">INICIO</a>
+        <a href="../index.html">LINKTREE</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        ☰
+        </a>
+
+    </nav>
+    <div class="hero-slider">
+        <div class="slider-container">
+
+            <div class="slide active" style="background-image: url(imagenes/pexels-hson-4335591.jpg);">
+                <div class="titulo">
+                    <h1 class="letra_1">Nuestra misión es ayudar a animales en situación de calle</h1>
+                    <h5 class="letra_2">Nuestro sueño es que un día no sea necesario hacerlo</h5>
+                    <a class="mio" href="nosotros.html">CONÓCENOS..</a>
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url(imagenes/pexels-maxmishin-12433910.jpg);">
+                <div class="titulo">
+                    <h1 class="letra_1">Tu donancion salva vidas</h1>
+                    <h5 class="letra_2">Gracias a tus donaciones podemos ayudar a salvar la vida de muchos animales</h5>
+                    <a class="mio" href="ayudar.html">DONA AHORA</a>
+                </div>
+            </div>
+
+
+            <div class="slide" style="background-image: url(imagenes/lindo-perro-para-adopcion-jugando-con-mujer.jpg);">
+                <div class="titulo">
+                    <h1 class="letra_1">Soñamos con un mundo sin animales en la calle</h1>
+                    <h5 class="letra_2">Adopta ahora</h5>
+                    <a class="mio" href="ayudar.html">ADOPTA</a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="nav-btn prev-btn">&lt;</button>
+        <button class="nav-btn next-btn">&gt;</button>
+
+        <div class="dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </div>
+    <h2 class="juego" >Encontrar las Parejas</h2>
+    <div id="game"></div>
+
+    <div class="contenedor">
+        <picture>
+            <img class="ultimo" src="imagenes/Captura de pantalla 2025-11-22 212342.png" alt="">
+            <div class="dentro">
+                <h1 class="va">Un sueño que podés apoyar hoy mismo</h1>
+                <P class="gp" ><b>Tu ayuda es esencial </b>para que sigamos brindando segundas oportunidades a nuestros perritos. juntos, podemos <b>continuar salvando vidas</b> y desmostrando que el amor lo cambia todo</P>
+                <a class="boton"  href="ayudar.html"> DONA AHORA</a>
+            </div>
+        </picture>
+    </div>
+    <footer>
+        <div class="nombres" >
+            <a href="contacto.html">CONTACTO</a>
+            <a href="ayudar.html">¿COMO AYUDAR?</a>
+            <a href="proyectos.html">PROYECTOS</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="index.html">INICIO</a>
+            <a href="#top">VOLVER ARRIBA</a>
+        </div>
+
+        <div class="redes">
+            <ul style="list-style: none;">
+                <li class="barra" ><a  href="https://www.instagram.com/leomessi/"><img class="a" src="imagenes/icons8-instagram-50.png" alt=""></a></li>
+                <li class="barra" ><a  href="https://x.com/leomessisite?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="a" src="imagenes/icons8-twitterx-50.png" alt=""></a></li>
+                <li class="barra" ><a  href="https://www.facebook.com/leomessi/?locale=es_LA"><img class="a" src="imagenes/icons8-facebook-nuevo-50.png" alt=""></a></li>
+                <li class="barra" ><a  href="linkedin.com/in/santiagoferra445?originalSubdomain=ar"><img class="a" src="imagenes/icons8-linkedin-50.png" alt=""></a></li>
+            </ul>
+        
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+
+    
+</body>
+</html>

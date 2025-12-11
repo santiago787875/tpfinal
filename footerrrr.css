@@ -1,0 +1,74 @@
+footer{
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+ 
+    
+
+}
+
+.nombres{
+
+    align-self: center;
+}
+
+
+.nombres a {
+    text-decoration: none;
+
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 2px solid white;
+
+
+}
+.barra{
+    
+    display: inline-block;
+    padding-right: 10px
+
+}
+.a {
+    width: 40px;
+    height: 40px;
+}
+.redes{
+    align-self: center;
+ ;
+}
+@media only screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        height: 13vh;
+        font-size: 12.5px;
+  
+        
+    }
+    .a {
+        width: 25px;
+        height: 25px;
+
+    }
+
+            
+}
+@media only screen and (min-width: 600px) and (max-width: 992px){
+        footer {
+        flex-direction: column;
+        height: 13vh;
+        font-size: 16px;
+  
+        
+    }
+    .a {
+        width: 25px;
+        height: 25px;
+
+    }
+
+}

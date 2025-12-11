@@ -1,0 +1,136 @@
+body{
+        background-color: rgb(224, 224, 224);    
+        margin: 0%;
+        
+}
+
+
+
+header {
+ margin-top: 0vh;
+ background-color: #888;
+
+
+    
+
+  font-size: 40px;
+  text-align: center;
+
+  border-bottom: 2px solid black;
+
+}
+header h2{
+   padding-top: 30px; 
+   font-family: "Asset", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0px;
+}
+.scroll-container {
+    height: 400px;      
+    width: 100%;        
+    overflow-y: scroll;  
+}
+
+
+.scroll-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.hola {   
+  margin-top: 20px; 
+  margin-left: auto;
+  margin-right: auto; 
+  height: 55vh;
+  width: 70%;
+ 
+}
+.hola h2, h5 {
+    margin: 0%;
+    padding: 10px;
+}
+
+
+
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: "Vend Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+    border-radius: 12px;
+    box-shadow: 0 120px 180px rgba(0,0,0,0.25);
+}
+.name{
+    width: 99%;
+    height: 400px;
+}
+.abajo{
+    display: flex;
+    flex-direction: row;
+    width: 72.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dado{
+    width: 45%;
+    margin-left: 0%;
+    
+}
+.ch{
+    margin-right: 0%;
+    width: 45%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    header {
+        margin-top: 0vh;
+    }
+    .abajo{
+        display: block;
+        width: 74%;
+        
+    }
+    .dado,.ch{
+        width: 94.5%;
+    }
+
+
+}
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 30px;
+
+    }
+    .hola {
+        width: 80%;
+
+    }
+    .name{
+        height: 200px;
+    }
+    .abajo{
+        display: block;
+        width: 86.5%;
+
+    }
+    .dado, .ch {
+        width: 92.6%;
+
+    }
+}

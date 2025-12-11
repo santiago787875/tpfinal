@@ -1,0 +1,283 @@
+body{
+  background-image: url(imagenes/photo-1556866261-8763a7662333.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+ 
+
+
+}
+
+.hola {
+  margin-top: 0vh;
+  overflow: auto;
+  border: 3px solid #000000;
+
+  height: 88.5vh;
+  width: 90%;
+  
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(96, 96, 96, 0.651);
+  overflow-y: hidden;
+  padding-bottom: 10px
+
+}
+.teo {
+
+  float: right;
+      width: 40%;
+    height: 100%;
+}
+.hola h1 {
+    display: inline-block;
+    font-size: 30px;
+    background-color: #07263a;
+    color: rgb(255, 255, 255);
+    width: 20%;
+    margin-left: 15%;
+    border-radius: 50px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+      font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hola h5 {
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0a3450;
+  background-color: rgb(176, 176, 176);
+  width: 25%;
+  border-radius: 50px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 5px;
+  
+}
+.hola p {
+  margin-left: 15px;
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+   color: #0a3450;
+  background-color: rgb(176, 176, 176);
+  width: 55%;
+  border-radius: 50px;
+  padding: 15px;
+  margin-top: 10px;
+
+ 
+}
+.go{
+
+    font-size: 20px;
+    background-color: #07263a;
+    color: rgb(255, 255, 255);
+    width: 26%;
+    margin-left: 12%;
+    border-radius: 50px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+      font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 5px;
+}
+
+.ho{
+  display: flex;
+  align-self: center;
+  margin-left: 14%;
+}
+.ho ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.ho img {
+      width: 50px;
+    height: 50px;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 10px; 
+  margin-left: 10%;
+
+  
+}
+
+.formulario label {
+  font-weight: bold;
+}
+
+.formulario input {
+  padding: 6px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.formulario button {
+  padding: 10px;
+  background-color: #3e8e41;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.formulario button:hover {
+  background-color: #2f6f33;
+}
+.final{
+    font-size: 20px;
+  margin-bottom: 0px;
+  margin-left: 11%;
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #07263a;
+  width: 27%;
+  border-radius: 50px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  
+}
+.formulario label {
+   color: #000000;
+  background-color: rgb(176, 176, 176);
+  width: 20%;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: center;
+
+}
+@media only screen and (max-width: 600px) {
+    .teo {
+      display: none;
+    }
+
+    .hola h1 {
+
+      width: 80%;
+      margin-left: 7%;
+      margin-bottom: 15px;
+
+    }
+    .hola h5 {
+      width: 80%;
+      border-radius: 40px;
+      margin-left: 7%;
+    }
+    .hola p {
+      width: 80%;
+      margin-left: 7%;
+      border-radius: 40px;
+    }
+    .hola {
+      width: 100%;
+      margin-top: 0vh;
+      height: 105vh;
+    }
+    .go{
+      width: 80%;
+      margin-left: 7%;
+    }
+    .final {
+      width: 80%;
+      margin-left: 7%;
+    }
+    .ho img {
+      width: 50px;
+      height: 50px;
+      margin-left: 50%;
+    }
+    .formulario label {
+
+      width: 40%;
+
+
+    }
+    .formulario {
+      width: 60%;
+      margin-left: 15%;
+    }
+    body{
+      overflow: auto;
+    }
+  
+} 
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+      .teo {
+      display: none;
+    }
+
+    .hola h1 {
+
+      width: 80%;
+      margin-left: 7%;
+      margin-bottom: 15px;
+
+    }
+    .hola h5 {
+      width: 80%;
+      border-radius: 40px;
+      margin-left: 7%;
+    }
+    .hola p {
+      width: 80%;
+      margin-left: 7%;
+      border-radius: 40px;
+    }
+    .hola {
+      width: 100%;
+      margin-top: 0vh;
+      height: 105vh;
+    }
+    .go{
+      width: 80%;
+      margin-left: 7%;
+    }
+    .final {
+      width: 80%;
+      margin-left: 7%;
+    }
+    .ho img {
+      width: 50px;
+      height: 50px;
+      margin-left: 175%;
+    }
+    .formulario label {
+
+      width: 25%;
+
+
+    }
+    .formulario {
+      width: 60%;
+      margin-left: 15%;
+    }
+    body{
+      overflow: auto;
+  
+    }
+  
+} 
+
+    
+
+
+

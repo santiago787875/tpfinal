@@ -1,0 +1,311 @@
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(180, 180, 180);
+}
+
+
+
+.hero-slider {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  margin-top: 0vh;
+}
+
+.slider-container {
+  display: flex;
+  width: 300vw; 
+  height: 100%; 
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.slide {
+  flex: 0 0 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.prev-btn { left: 20px; }
+.next-btn { right: 20px; }
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+.titulo {
+  position: absolute;
+  bottom: 25%;
+  left: 4%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.532);
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: 60%;
+  z-index: 2;
+
+
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.letra_1{
+  font-size: 60px; 
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0%;
+  padding: 0px;
+  
+  }
+.letra_2{ 
+  font-size: 30px;
+  margin: 0%;
+ }
+.mio{ 
+  font-size: 30px;
+  margin-top: 15px;
+  background-color: rgb(94, 94, 94);
+  border-radius: 50px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+
+
+  color: rgb(255, 255, 255);
+
+}
+
+
+.contenedor picture {
+  position: relative;      
+  display: block;          
+}
+
+.ultimo {
+  margin-top: 60px;
+  width: 100%;
+  display: block;         
+}
+
+.dentro {
+  position: absolute;
+  top: 15%;              
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 800;
+  color: white;           
+  width: 45%;
+}
+.va{
+  font-size: 50px;
+  color: black;
+
+}
+.gp{
+  font-size: 30px;
+  color: black;
+
+}
+.boton{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 25px;
+  text-decoration: none;
+}
+#game {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px; 
+    margin: 0 auto;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background: #555;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.card.open img {
+    opacity: 1;
+}
+.juego {
+  text-align: center;
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  background-color: gray;
+  color: black;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+
+
+}
+@media only screen and (max-width: 600px) {
+  .hero-slider {
+    margin-top: 0vh;
+    height: 92vh;
+  }
+  .titulo {
+
+    bottom: 16%;
+    left: 4%;
+
+    padding: 10px 30px;
+
+    width: 60%;
+
+  }
+  .letra_1{
+    font-size: 30px;
+  }
+  .juego {
+    width: 80%;
+  }
+  #game {
+    grid-template-columns: repeat(4, 100px); /* ACHICA las columnas */
+    gap: 10px;
+    width: 100%;
+    max-width: 350px; /* Evita que se agrande */
+  }
+
+  .card {
+    width: 100px;
+    height:100px;
+  }
+
+  .card img {
+    object-fit: cover;
+  }
+  .va{
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  .gp{
+    display: none;
+  }
+
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .hero-slider {
+    margin-top: 0vh;
+    height: 92vh;
+  }
+  .titulo {
+
+    bottom: 16%;
+    left: 4%;
+
+    padding: 10px 30px;
+
+    width: 60%;
+
+  }
+  .letra_1{
+    font-size: 30px;
+  }
+  .juego {
+    width: 80%;
+  }
+  #game {
+    grid-template-columns: repeat(4, 100px); /* ACHICA las columnas */
+    gap: 10px;
+    width: 100%;
+    max-width: 350px; /* Evita que se agrande */
+  }
+
+  .card {
+    width: 100px;
+    height:100px;
+  }
+
+  .card img {
+    object-fit: cover;
+  }
+  .va{
+    font-size: 40px;
+    margin-top: 0px;
+  }
+  .gp{
+    display: none;
+  }
+  .boton{
+    font-size: 35px;
+  }
+
+}
